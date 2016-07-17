@@ -19,5 +19,8 @@ end
 
 group :development, :test do
   gem "minitest-rails-capybara"
-  gem "pry", :require => "pry"
+  gem 'capybara'
+  gem 'pry', :require => 'pry'
+  gem 'rspec-rails'
+  gem 'database_cleaner'
 end
