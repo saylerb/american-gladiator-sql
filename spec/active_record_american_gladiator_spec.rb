@@ -192,7 +192,6 @@ describe "ActiveRecord American Gladiator" do
       # Hints: http://apidock.com/rails/ActiveRecord/QueryMethods/select
       #        http://stackoverflow.com/questions/8696005/rails-3-activerecord-order-by-count-on-association
 
-
       most_popular_items = Item.joins(:orders).
         select("items.*, count(order_items.item_id) AS items_count").
         group("items.id").
